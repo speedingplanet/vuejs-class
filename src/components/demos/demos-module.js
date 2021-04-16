@@ -9,6 +9,9 @@ export const demosModule = {
     decrement( state ) {
       state.counter--;
     },
+    addVal( state, val ) {
+      state.counter = state.counter + val;
+    },
   },
   actions: {},
   getters: {},

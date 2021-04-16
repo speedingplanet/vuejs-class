@@ -14,13 +14,16 @@
                 v-model="txId"
               />
               <br />
-              <button class="btn btn-primary">Find</button>
+              <button type="button" class="btn btn-primary">Find</button>
             </form>
           </div>
         </div>
       </div>
       <div class="col">
         <h4>Transaction:</h4>
+        <div v-if="foundTx">
+          {{ JSON.stringify(foundTx) }}
+        </div>
       </div>
     </div>
   </section>
@@ -32,6 +35,19 @@ export default {
     return {
       txId: '0',
     };
+  },
+  computed: {
+    foundTx() {
+      /*
+      let transactions = this.$store.state.tx.items;
+      return transactions.find( ( tx ) => {
+        if ( tx.id === this.txId ) {
+          return true;
+        }
+      } );
+      */
+      return this.$store.getters.getTxById( this.txId );
+    },
   },
 };
 </script>
