@@ -11,6 +11,7 @@ import GreeterIf from '../components/demos/GreeterIf.vue';
 import GreeterShow from '../components/demos/GreeterShow.vue';
 import ComponentFetch from '../components/demos/ComponentFetch.vue';
 import ListData from '../components/demos/ListData.vue';
+import VuexCounter from '../components/demos/VuexCounter.vue';
 
 const routes = [
   {
@@ -45,6 +46,10 @@ const routes = [
       {
         path: 'component-fetch',
         component: ComponentFetch,
+      },
+      {
+        path: 'vuex-counter',
+        component: VuexCounter,
       },
       {
         path: 'list-data',

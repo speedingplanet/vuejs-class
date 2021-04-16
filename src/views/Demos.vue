@@ -36,6 +36,9 @@
           <li>
             <router-link to="/demos/list-data">List data</router-link>
           </li>
+          <li>
+            <router-link to="/demos/vuex-counter">Vuex Counter</router-link>
+          </li>
         </ul>
       </div>
       <div class="col">
