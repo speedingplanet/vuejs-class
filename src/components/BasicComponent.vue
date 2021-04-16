@@ -16,14 +16,14 @@
 export default {
   data() {
     return {
-      message: 'You have been warned!'
+      message: 'You have been warned!',
     };
   },
   methods: {
     getName() {
       return 'John Paxton';
-    }
-  }
+    },
+  },
 };
 </script>
 

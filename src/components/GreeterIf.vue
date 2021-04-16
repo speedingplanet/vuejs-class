@@ -16,8 +16,8 @@
 export default {
   props: {
     firstName: String,
-    address: Object
-  }
+    address: Object,
+  },
 };
 </script>
 

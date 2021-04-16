@@ -16,11 +16,11 @@ export default {
       default() {
         return {
           city: 'Default city',
-          state: 'Default state'
+          state: 'Default state',
         };
-      }
-    }
-  }
+      },
+    },
+  },
 };
 </script>
 

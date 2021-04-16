@@ -2,26 +2,29 @@ module.exports = {
   root: true,
   env: {
     browser: true,
-    node: true
+    node: true,
   },
-  extends: ['standard', 'plugin:vue/vue3-essential', '@vue/standard'],
+  extends: [ 'standard', 'plugin:vue/vue3-essential', '@vue/standard' ],
   parserOptions: {
-    parser: 'babel-eslint'
+    parser: 'babel-eslint',
   },
 
   rules: {
     'vue/no-unused-components': 'warn',
-    semi: ['error', 'always'],
-    'array-bracket-spacing': ['error', 'always'],
-    'space-before-function-paren': ['error', 'never'],
-    'newline-per-chained-call': ['error', { ignoreChainWithDepth: 2 }],
-    indent: ['error', 2, { MemberExpression: 1 }],
-    'object-curly-spacing': ['error', 'always'],
-    'space-in-parens': ['error', 'always'],
+    'array-bracket-spacing': [ 'error', 'always' ],
+    'comma-dangle': [ 'error', 'always-multiline' ],
+    indent: [ 'error', 2, { MemberExpression: 1 } ],
+    'max-len': [ 'error', { code: 90, comments: 120 } ],
+    'newline-per-chained-call': [ 'error', { ignoreChainWithDepth: 2 } ],
+    'object-curly-spacing': [ 'error', 'always' ],
     'object-property-newline': [
       'error',
-      { allowAllPropertiesOnSameLine: true }
+      { allowAllPropertiesOnSameLine: true },
     ],
-    'prefer-const': 'off'
-  }
+    'prefer-const': 'off',
+    semi: [ 'error', 'always' ],
+    'space-before-function-paren': [ 'error', 'never' ],
+    'space-in-parens': [ 'error', 'always' ],
+  },
+  ignorePatterns: [ 'node_modules' ],
 };

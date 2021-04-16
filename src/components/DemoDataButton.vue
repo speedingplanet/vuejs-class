@@ -11,7 +11,7 @@
 export default {
   data() {
     return {
-      message: 'Default message'
+      message: 'Default message',
     };
   },
   methods: {
@@ -20,8 +20,8 @@ export default {
       // this.message = name + ' clicked on the button!';
       this.message = `${name} clicked on the button!`;
       // console.log( 'Event: ', event );
-    }
-  }
+    },
+  },
 };
 </script>
 

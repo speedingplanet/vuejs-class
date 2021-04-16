@@ -16,8 +16,8 @@ export default {
     handleButtonClick( name, event ) {
       console.log( name + ' clicked on the button!' );
       console.log( 'Event: ', event );
-    }
-  }
+    },
+  },
 };
 </script>
 
