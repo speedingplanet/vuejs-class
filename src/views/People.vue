@@ -1,7 +1,7 @@
 <template>
-  <section>
+  <section class="container">
     <header>
-      <h2>Demos Manager</h2>
+      <h2>People</h2>
     </header>
   </section>
 </template>
@@ -10,4 +10,5 @@
 export default {};
 </script>
 
-<style></style>
+<style>
+</style>
