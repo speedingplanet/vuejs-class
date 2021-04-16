@@ -28,6 +28,14 @@
           <li>
             <router-link to="/demos/greeter-show">Greeter + v-show</router-link>
           </li>
+          <li>
+            <router-link to="/demos/component-fetch"
+              >Fetching with a component</router-link
+            >
+          </li>
+          <li>
+            <router-link to="/demos/list-data">List data</router-link>
+          </li>
         </ul>
       </div>
       <div class="col">

@@ -9,6 +9,8 @@ import DemoDataButton from '../components/demos/DemoDataButton.vue';
 import GreeterDefaults from '../components/demos/GreeterDefaults.vue';
 import GreeterIf from '../components/demos/GreeterIf.vue';
 import GreeterShow from '../components/demos/GreeterShow.vue';
+import ComponentFetch from '../components/demos/ComponentFetch.vue';
+import ListData from '../components/demos/ListData.vue';
 
 const routes = [
   {
@@ -39,6 +41,14 @@ const routes = [
       {
         path: 'greeter-show',
         component: GreeterShow,
+      },
+      {
+        path: 'component-fetch',
+        component: ComponentFetch,
+      },
+      {
+        path: 'list-data',
+        component: ListData,
       },
     ],
   },
