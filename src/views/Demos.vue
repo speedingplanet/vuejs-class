@@ -42,6 +42,16 @@
           <li>
             <router-link to="/demos/find-tx">Find a Transaction</router-link>
           </li>
+          <li>
+            <router-link to="/demos/route-params/alpha/beta/gamma"
+              >Route Params</router-link
+            >
+          </li>
+          <li>
+            <router-link to="/demos/route-params-props/apple/banana/cat"
+              >Route Params (via props)</router-link
+            >
+          </li>
         </ul>
       </div>
       <div class="col">

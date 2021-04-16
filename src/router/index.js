@@ -13,6 +13,8 @@ import ComponentFetch from '../components/demos/ComponentFetch.vue';
 import ListData from '../components/demos/ListData.vue';
 import FindATransaction from '../components/demos/FindATransaction.vue';
 import VuexCounter from '../components/demos/VuexCounter.vue';
+import RouteParams from '../components/demos/RouteParams';
+import RouteParamsProps from '../components/demos/RouteParamsProps';
 
 const routes = [
   {
@@ -59,6 +61,15 @@ const routes = [
       {
         path: 'list-data',
         component: ListData,
+      },
+      {
+        path: 'route-params/:first/:second/:third',
+        component: RouteParams,
+      },
+      {
+        path: 'route-params-props/:first/:second/:third',
+        component: RouteParamsProps,
+        props: true,
       },
     ],
   },
