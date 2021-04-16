@@ -1,6 +1,10 @@
 <template>
   <div>
-    <button type="button" @click="handleButtonClick('John', $event)">
+    <button
+      class="btn btn-primary"
+      type="button"
+      @click="handleButtonClick('John', $event)"
+    >
       Click me</button
     ><br />
     <p>{{ message }}</p>

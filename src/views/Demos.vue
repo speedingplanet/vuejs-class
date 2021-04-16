@@ -1,8 +1,39 @@
 <template>
   <section class="container">
-    <header>
+    <header class="row">
       <h2>Demos</h2>
     </header>
+    <div class="row">
+      <div class="col-3">
+        <ul class="list-unstyled">
+          <li>
+            <router-link to="/demos/basic-component"
+              >Basic Component</router-link
+            >
+          </li>
+          <li>
+            <router-link to="/demos/event-handling">Event Handling</router-link>
+          </li>
+          <li>
+            <router-link to="/demos/event-handling-data"
+              >Event Handling with data()</router-link
+            >
+          </li>
+          <li>
+            <router-link to="/demos/greeter">Greeter</router-link>
+          </li>
+          <li>
+            <router-link to="/demos/greeter-if">Greeter + v-if</router-link>
+          </li>
+          <li>
+            <router-link to="/demos/greeter-show">Greeter + v-show</router-link>
+          </li>
+        </ul>
+      </div>
+      <div class="col">
+        <router-view />
+      </div>
+    </div>
   </section>
 </template>
 
