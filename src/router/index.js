@@ -11,6 +11,7 @@ import GreeterIf from '../components/demos/GreeterIf.vue';
 import GreeterShow from '../components/demos/GreeterShow.vue';
 import ComponentFetch from '../components/demos/ComponentFetch.vue';
 import ListData from '../components/demos/ListData.vue';
+import FindATransaction from '../components/demos/FindATransaction.vue';
 import VuexCounter from '../components/demos/VuexCounter.vue';
 
 const routes = [
@@ -50,6 +51,10 @@ const routes = [
       {
         path: 'vuex-counter',
         component: VuexCounter,
+      },
+      {
+        path: 'find-tx',
+        component: FindATransaction,
       },
       {
         path: 'list-data',

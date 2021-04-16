@@ -39,6 +39,9 @@
           <li>
             <router-link to="/demos/vuex-counter">Vuex Counter</router-link>
           </li>
+          <li>
+            <router-link to="/demos/find-tx">Find a Transaction</router-link>
+          </li>
         </ul>
       </div>
       <div class="col">
