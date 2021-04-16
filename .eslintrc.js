@@ -2,27 +2,18 @@ module.exports = {
   root: true,
   env: {
     browser: true,
-    node: true,
-    es2021: true
+    node: true
   },
-  extends: [
-    'standard',
-    'standard-with-typescript',
-    'plugin:vue/vue3-essential',
-    '@vue/standard'
-  ],
+  extends: ['standard', 'plugin:vue/vue3-essential', '@vue/standard'],
   parserOptions: {
     parser: 'babel-eslint'
   },
-  plugins: ['@babel'],
-  parser: '@babel/eslint-parser',
 
   rules: {
+    'vue/no-unused-components': 'warn',
     semi: ['error', 'always'],
-    'max-len': ['error', { code: 90, comments: 120 }],
     'array-bracket-spacing': ['error', 'always'],
     'space-before-function-paren': ['error', 'never'],
-    'comma-dangle': ['error', 'always-multiline'],
     'newline-per-chained-call': ['error', { ignoreChainWithDepth: 2 }],
     indent: ['error', 2, { MemberExpression: 1 }],
     'object-curly-spacing': ['error', 'always'],
