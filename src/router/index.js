@@ -14,6 +14,7 @@ import ListData from '../components/demos/ListData.vue';
 import FindATransaction from '../components/demos/FindATransaction.vue';
 import VuexCounter from '../components/demos/VuexCounter.vue';
 import RouteParams from '../components/demos/RouteParams';
+import RoutedWrapper from '../components/demos/param-wrapper/RoutedWrapper';
 import RouteParamsProps from '../components/demos/RouteParamsProps';
 
 const routes = [
@@ -63,10 +64,15 @@ const routes = [
         component: ListData,
       },
       {
+        path: 'routed-wrapper/:first/:second/:third',
+        component: RoutedWrapper,
+      },
+      {
         path: 'route-params/:first/:second/:third',
         component: RouteParams,
       },
       {
+        // <RouteParamsProps first="..." second="..." third="..." />
         path: 'route-params-props/:first/:second/:third',
         component: RouteParamsProps,
         props: true,

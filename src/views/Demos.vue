@@ -43,6 +43,11 @@
             <router-link to="/demos/find-tx">Find a Transaction</router-link>
           </li>
           <li>
+            <router-link to="/demos/routed-wrapper/just/a/test"
+              >Routed Wrapper</router-link
+            >
+          </li>
+          <li>
             <router-link to="/demos/route-params/alpha/beta/gamma"
               >Route Params</router-link
             >
