@@ -5,11 +5,12 @@
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
+    "test:unit": "vue-cli-service test:unit",
     "lint": "vue-cli-service lint",
+    "format": "npm run prettier:fix && npm run lint:fix",
     "lint:fix": "npm run lint -- --fix",
     "prettier": "prettier --check src/**/*.{js,vue}",
     "prettier:fix": "prettier --check --write src/**/*.{js,vue}",
-    "format": "npm run prettier:fix && npm run lint:fix",
     "rest-server": "rest-server start"
   },
   "dependencies": {
@@ -25,6 +26,7 @@
     "@vue/cli-plugin-babel": "~4.5.0",
     "@vue/cli-plugin-eslint": "~4.5.0",
     "@vue/cli-plugin-router": "~4.5.0",
+    "@vue/cli-plugin-unit-jest": "~4.5.0",
     "@vue/cli-service": "~4.5.0",
     "@vue/compiler-sfc": "^3.0.0",
     "@vue/eslint-config-standard": "^5.1.2",
@@ -36,6 +38,8 @@
     "eslint-plugin-promise": "^4.2.1",
     "eslint-plugin-standard": "^4.0.0",
     "eslint-plugin-vue": "^7.0.0",
-    "prettier": "^1.19.1"
+    "prettier": "^1.19.1",
+    "typescript": "~3.9.3",
+    "vue-jest": "^5.0.0-0"
   }
 }

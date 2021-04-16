@@ -6,6 +6,7 @@
     <p>Message: {{ message }}</p>
     <p>2 + 2 = {{ 2 + 2 }}</p>
     <p>My name is {{ getName() }}</p>
+    <p>props.someProp: {{ someProp }}</p>
     <p>Epoch milliseconds {{ Date.now() }}</p>
     <p>Today is {{ new Date() }}</p>
   </section>
@@ -18,6 +19,14 @@ export default {
     return {
       message: 'You have been warned!',
     };
+  },
+  props: {
+    someProp: {
+      type: String,
+      default() {
+        return 'someProp default value';
+      },
+    },
   },
   methods: {
     getName() {

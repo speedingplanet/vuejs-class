@@ -1,10 +1,13 @@
 module.exports = {
   root: true,
+
   env: {
     browser: true,
     node: true,
   },
+
   extends: [ 'standard', 'plugin:vue/vue3-essential', '@vue/standard' ],
+
   parserOptions: {
     parser: 'babel-eslint',
   },
@@ -26,5 +29,18 @@ module.exports = {
     'space-before-function-paren': [ 'error', 'never' ],
     'space-in-parens': [ 'error', 'always' ],
   },
+
   ignorePatterns: [ 'node_modules' ],
+
+  overrides: [
+    {
+      files: [
+        '**/__tests__/*.{j,t}s?(x)',
+        '**/tests/unit/**/*.spec.{j,t}s?(x)',
+      ],
+      env: {
+        jest: true,
+      },
+    },
+  ],
 };
