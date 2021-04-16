@@ -19,6 +19,9 @@ export default {
     second: String,
     third: String,
   },
+  atiyasFunction() {
+    console.log( 'Invoked!' );
+  },
 };
 </script>
 

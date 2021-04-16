@@ -17,6 +17,25 @@ export default {
       third: this.$route.params.third,
     };
   },
+  created() {
+    let fnName = 'atiyasFunction';
+    RenderProps[fnName]();
+    /* On ANY JavaScript object, access properties dynamically with []
+      let person = {
+        firstName: 'John',
+        lastName: 'Paxton',
+        getFullName() {
+          return this.firstName + ' ' + this.lastName;
+        }
+      }
+
+      let propName = 'firstName';
+      console.log(person[propName]); // Prints 'John'
+
+      let functionName = 'getFullName';
+      console.log(person[functionName]()); // Parens () invokes the function!
+    */
+  },
 };
 </script>
 
